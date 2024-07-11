@@ -5,7 +5,7 @@ This is a simple replication of the SBOM (Software Bill of Materials) issues we 
 In this setup we are trying to build a simple go application with
 - `UUID:1.6.0` package with checksum `h1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=`
 
-Even though the package is simple, there are quiet a few differences
+Even though the package is simple, there are quiet a few differences in SBOM
 
 I have put the diff in [here](https://www.diffchecker.com/yNT6BwEJ/)
 
