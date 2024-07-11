@@ -1,0 +1,10 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary")
+
+go_binary(
+    name = "my_go_app",
+    srcs = ["main.go"],
+    deps = [
+        "@com_github_google_uuid//:go_default_library",
+    ],
+    visibility = ["//visibility:public"],
+)
