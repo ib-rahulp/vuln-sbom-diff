@@ -1,4 +1,4 @@
-# Vuln SBOM diff - go build vs bazel build
+# SBOM Vuln diff - go build vs bazel build
 
 This is a simple replication of the SBOM (Software Bill of Materials) issues we are facing when building using bazel
 
