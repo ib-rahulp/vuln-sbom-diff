@@ -1,0 +1,456 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:2d3fd177-f38c-4a2c-86a8-ce2b13aed4e5",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-07-16T15:27:45+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "group": "aquasecurity",
+          "name": "trivy",
+          "version": "0.53.0"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "355f3702-b25d-46af-bfce-1a9d88543d5e",
+      "type": "container",
+      "name": "sbom-raw-sqllite",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:77192cf194ddc77d69087b86b763c47c7f2b0f215d0e4bf4752565cae5ce728d"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:a83c9b56bbe0f6c26c4b1d86e6de3a4862755d208c9dfae764f64b210eafa58c"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:f82fab1a1a71a7681247caeade357f771b6c624595454c16e21148bf98f2ef10"
+        },
+        {
+          "name": "aquasecurity:trivy:ImageID",
+          "value": "sha256:b79809f26e6142940760bc8660a7972e7376851763ea595b63491139ac4bb869"
+        },
+        {
+          "name": "aquasecurity:trivy:RepoTag",
+          "value": "sbom-raw-sqllite:latest"
+        },
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "6589ae1a-aba6-41af-9dc4-a74377ab3731",
+      "type": "application",
+      "name": "vuln-sbom-issue",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b5e8eb2b-0f29-48a9-bb7d-302decca4766",
+      "type": "operating-system",
+      "name": "debian",
+      "version": "10.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "os-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "debian"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/base-files@10.3%2Bdeb10u12?arch=arm64&distro=debian-10.12",
+      "type": "library",
+      "supplier": {
+        "name": "Santiago Vila <sanvila@debian.org>"
+      },
+      "name": "base-files",
+      "version": "10.3+deb10u12",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-3.0"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/base-files@10.3%2Bdeb10u12?arch=arm64&distro=debian-10.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:77192cf194ddc77d69087b86b763c47c7f2b0f215d0e4bf4752565cae5ce728d"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "base-files@10.3+deb10u12"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "base-files"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "10.3+deb10u12"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libc6@2.28-10%2Bdeb10u1?arch=arm64&distro=debian-10.12",
+      "type": "library",
+      "supplier": {
+        "name": "GNU Libc Maintainers <debian-glibc@lists.debian.org>"
+      },
+      "name": "libc6",
+      "version": "2.28-10+deb10u1",
+      "licenses": [
+        {
+          "license": {
+            "name": "LGPL-2.1"
+          }
+        },
+        {
+          "license": {
+            "name": "GPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/libc6@2.28-10%2Bdeb10u1?arch=arm64&distro=debian-10.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:a83c9b56bbe0f6c26c4b1d86e6de3a4862755d208c9dfae764f64b210eafa58c"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libc6@2.28-10+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "glibc"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "10+deb10u1"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2.28"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/libssl1.1@1.1.1n-0%2Bdeb10u3?arch=arm64&distro=debian-10.12",
+      "type": "library",
+      "supplier": {
+        "name": "Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>"
+      },
+      "name": "libssl1.1",
+      "version": "1.1.1n-0+deb10u3",
+      "purl": "pkg:deb/debian/libssl1.1@1.1.1n-0%2Bdeb10u3?arch=arm64&distro=debian-10.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:a83c9b56bbe0f6c26c4b1d86e6de3a4862755d208c9dfae764f64b210eafa58c"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "libssl1.1@1.1.1n-0+deb10u3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "openssl"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "0+deb10u3"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.1.1n"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/netbase@5.6?arch=all&distro=debian-10.12",
+      "type": "library",
+      "supplier": {
+        "name": "Marco d'Itri <md@linux.it>"
+      },
+      "name": "netbase",
+      "version": "5.6",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/netbase@5.6?arch=all&distro=debian-10.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:77192cf194ddc77d69087b86b763c47c7f2b0f215d0e4bf4752565cae5ce728d"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "netbase@5.6"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "netbase"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "5.6"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/openssl@1.1.1n-0%2Bdeb10u3?arch=arm64&distro=debian-10.12",
+      "type": "library",
+      "supplier": {
+        "name": "Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>"
+      },
+      "name": "openssl",
+      "version": "1.1.1n-0+deb10u3",
+      "purl": "pkg:deb/debian/openssl@1.1.1n-0%2Bdeb10u3?arch=arm64&distro=debian-10.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:a83c9b56bbe0f6c26c4b1d86e6de3a4862755d208c9dfae764f64b210eafa58c"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "openssl@1.1.1n-0+deb10u3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "openssl"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "0+deb10u3"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "1.1.1n"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/debian/tzdata@2021a-0%2Bdeb10u6?arch=all&distro=debian-10.12",
+      "type": "library",
+      "supplier": {
+        "name": "GNU Libc Maintainers <debian-glibc@lists.debian.org>"
+      },
+      "name": "tzdata",
+      "version": "2021a-0+deb10u6",
+      "purl": "pkg:deb/debian/tzdata@2021a-0%2Bdeb10u6?arch=all&distro=debian-10.12",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:77192cf194ddc77d69087b86b763c47c7f2b0f215d0e4bf4752565cae5ce728d"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "tzdata@2021a-0+deb10u6"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "debian"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcName",
+          "value": "tzdata"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcRelease",
+          "value": "0+deb10u6"
+        },
+        {
+          "name": "aquasecurity:trivy:SrcVersion",
+          "value": "2021a"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/google/uuid@v1.6.0",
+      "type": "library",
+      "name": "github.com/google/uuid",
+      "version": "v1.6.0",
+      "purl": "pkg:golang/github.com/google/uuid@v1.6.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f82fab1a1a71a7681247caeade357f771b6c624595454c16e21148bf98f2ef10"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/mattn/go-sqlite3@v1.14.14",
+      "type": "library",
+      "name": "github.com/mattn/go-sqlite3",
+      "version": "v1.14.14",
+      "purl": "pkg:golang/github.com/mattn/go-sqlite3@v1.14.14",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f82fab1a1a71a7681247caeade357f771b6c624595454c16e21148bf98f2ef10"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/stdlib@1.20.5",
+      "type": "library",
+      "name": "stdlib",
+      "version": "1.20.5",
+      "purl": "pkg:golang/stdlib@1.20.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f82fab1a1a71a7681247caeade357f771b6c624595454c16e21148bf98f2ef10"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/vuln-sbom-issue",
+      "type": "library",
+      "name": "vuln-sbom-issue",
+      "purl": "pkg:golang/vuln-sbom-issue",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:f82fab1a1a71a7681247caeade357f771b6c624595454c16e21148bf98f2ef10"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "355f3702-b25d-46af-bfce-1a9d88543d5e",
+      "dependsOn": [
+        "6589ae1a-aba6-41af-9dc4-a74377ab3731",
+        "b5e8eb2b-0f29-48a9-bb7d-302decca4766"
+      ]
+    },
+    {
+      "ref": "6589ae1a-aba6-41af-9dc4-a74377ab3731",
+      "dependsOn": [
+        "pkg:golang/vuln-sbom-issue"
+      ]
+    },
+    {
+      "ref": "b5e8eb2b-0f29-48a9-bb7d-302decca4766",
+      "dependsOn": [
+        "pkg:deb/debian/base-files@10.3%2Bdeb10u12?arch=arm64&distro=debian-10.12",
+        "pkg:deb/debian/libc6@2.28-10%2Bdeb10u1?arch=arm64&distro=debian-10.12",
+        "pkg:deb/debian/libssl1.1@1.1.1n-0%2Bdeb10u3?arch=arm64&distro=debian-10.12",
+        "pkg:deb/debian/netbase@5.6?arch=all&distro=debian-10.12",
+        "pkg:deb/debian/openssl@1.1.1n-0%2Bdeb10u3?arch=arm64&distro=debian-10.12",
+        "pkg:deb/debian/tzdata@2021a-0%2Bdeb10u6?arch=all&distro=debian-10.12"
+      ]
+    },
+    {
+      "ref": "pkg:deb/debian/base-files@10.3%2Bdeb10u12?arch=arm64&distro=debian-10.12",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:deb/debian/libc6@2.28-10%2Bdeb10u1?arch=arm64&distro=debian-10.12",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:deb/debian/libssl1.1@1.1.1n-0%2Bdeb10u3?arch=arm64&distro=debian-10.12",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:deb/debian/netbase@5.6?arch=all&distro=debian-10.12",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:deb/debian/openssl@1.1.1n-0%2Bdeb10u3?arch=arm64&distro=debian-10.12",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:deb/debian/tzdata@2021a-0%2Bdeb10u6?arch=all&distro=debian-10.12",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/github.com/google/uuid@v1.6.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/github.com/mattn/go-sqlite3@v1.14.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/stdlib@1.20.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:golang/vuln-sbom-issue",
+      "dependsOn": [
+        "pkg:golang/github.com/google/uuid@v1.6.0",
+        "pkg:golang/github.com/mattn/go-sqlite3@v1.14.14",
+        "pkg:golang/stdlib@1.20.5"
+      ]
+    }
+  ],
+  "vulnerabilities": []
+}

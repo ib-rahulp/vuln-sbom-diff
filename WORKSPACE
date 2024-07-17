@@ -32,3 +32,11 @@ go_repository(
     sum = "h1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=",
     version = "v1.6.0",
 )
+
+go_repository(
+    name = "com_github_mattn_go_sqlite3",
+    importpath = "github.com/mattn/go-sqlite3",
+    sum = "h1:qZgc/Rwetq+MtyE18WhzjokPD93dNqLGNT3QJuLvBGw=",
+    version = "v1.14.14",
+    build_directives = ["cgo = 1"],  # Enable CGO
+)
